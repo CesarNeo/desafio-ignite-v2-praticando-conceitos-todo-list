@@ -1,0 +1,81 @@
+.taskContainer {
+  width: 100%;
+  min-height: 4.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.938rem;
+
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+}
+
+.containerCheckAndTask {
+  display: flex;
+  align-items: center;
+  gap: 0.938rem;
+}
+
+.containerCheckAndTask > p {
+  font-size: 0.875rem;
+  color: var(--gray-100);
+}
+
+.containerCheckAndTask > p.isChecked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.buttonCheckTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.buttonCheckTask.isChecked {
+  background: var(--purple-dark);
+  color: var(--gray-100);
+  border: none;
+}
+
+.buttonCheckTask:hover {
+  border: 2px solid var(--blue-dark);
+}
+
+.buttonCheckTask.isChecked:hover {
+  background: var(--purple);
+  border: none;
+}
+
+.buttonDeleteTask {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: 0;
+
+  background: none;
+  border: none;
+  border-radius: 4px;
+  color: var(--gray-300);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttonDeleteTask:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}

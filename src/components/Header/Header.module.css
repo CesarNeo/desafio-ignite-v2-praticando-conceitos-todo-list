@@ -1,0 +1,48 @@
+.headerContainer {
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  background: var(--gray-700);
+}
+
+.headerContent {
+  width: 46rem;
+  height: 3.375rem;
+  max-width: 90%;
+  position: absolute;
+  top: 85%;
+  display: grid;
+  grid-template-columns: 1fr 5.625rem;
+  gap: 0.5rem;
+}
+
+.inputHeader {
+  padding: 1rem;
+
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  background: var(--gray-500);
+  color: var(--gray-100);
+}
+
+.headerButtonCreate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--blue-dark);
+  border: none;
+  color: var(--gray-100);
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.headerButtonCreate:hover {
+  background: var(--blue);
+}
